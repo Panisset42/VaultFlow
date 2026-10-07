@@ -5,5 +5,20 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="VaultFlow.MainWindow"
         Title="VaultFlow">
-    Welcome to Avalonia!
+    <Panel HorizontalAlignment="Stretch"
+           VerticalAlignment="Stretch">
+        <Grid>
+            <StackPanel>
+            <!-- Contexto de itens/pastas -->
+            </StackPanel>
+            <StackPanel>
+                <!-- menu de açoes -->
+            </StackPanel>
+            <StackPanel>
+                <!-- tela principal -->
+            </StackPanel>
+        </Grid>
+        
+        
+    </Panel>
 </Window>

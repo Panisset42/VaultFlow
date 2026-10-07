@@ -7,4 +7,31 @@
     <Application.Styles>
         <FluentTheme />
     </Application.Styles>
+             <Application.Resources>
+             <ResourceDictionary>
+                 <!-- Basic collor pallet scheme -->
+                 <!-- Brand color -->
+                 <Color x:Key="PrimaryBrandColor">#0F172A</Color>
+                 
+                 <!-- Neutral Colors // Background // Dividers  -->
+                 <Color x:Key="PrimaryBackgroundColor">#1E293B</Color>
+                 <Color x:Key="SecondaryBackgroundColor">#334155</Color>
+                 <Color x:Key="DividerColor">#475569</Color>
+                 
+                 <!-- Text and Typography -->
+                 <Color x:Key="TextPrimaryColor">#F1F5F9 </Color>
+                 <Color x:Key="TextSecondaryColor">#94A3B8</Color>
+                 <Color x:Key="TextDisabledColor"> #64748B</Color>
+                 
+                 <!-- Functional States and warnings -->
+                 <Color x:Key="SuccessColor">#10B981</Color>
+                 <Color x:Key="WarningColor">#f59e08</Color>
+                 <Color x:Key="ErrorColor">#ef4444</Color>
+                 
+                 <!-- Accent and hover -->
+                 <Color x:Key="AccentColor">#3b82f6</Color>
+                 <Color x:Key="HoverColor">#2563eb</Color>
+                 
+             </ResourceDictionary>
+             </Application.Resources>
 </Application>
