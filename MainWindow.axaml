@@ -3,22 +3,53 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        xmlns:vm="using:VaultFlow.ViewModel"
         x:Class="VaultFlow.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
         Title="VaultFlow">
-    <Panel HorizontalAlignment="Stretch"
-           VerticalAlignment="Stretch">
-        <Grid>
-            <StackPanel>
-            <!-- Contexto de itens/pastas -->
-            </StackPanel>
-            <StackPanel>
+        <SplitView IsPaneOpen="True"
+                   OpenPaneLength="300"
+                   CompactPaneLength="50"
+                   DisplayMode="CompactInline"
+                   Background="{StaticResource PrimaryBackgroundColor}"
+                   PaneBackground="{StaticResource SecondaryBackgroundColor}"
+                   Foreground="{StaticResource TextPrimaryColor}"
+                   >
+            <SplitView.Pane>
                 <!-- menu de açoes -->
-            </StackPanel>
-            <StackPanel>
+                <StackPanel Spacing="5"
+                            Margin="5"
+                            >
+                    <Button Background="{StaticResource PrimaryBackgroundColor}"
+                            Foreground="{StaticResource TextPrimaryColor}"
+                            HorizontalAlignment="Right"
+                            Width="50"
+                            Height="50"
+                            HorizontalContentAlignment="Center"
+                            VerticalContentAlignment="Center"
+                            >
+                        -
+                    </Button>
+                    <ListBox Background="{StaticResource SecondaryBackgroundColor}"
+                             Foreground="{StaticResource TextSecondaryColor}">
+                        <ListBoxItem>
+                            Open Archive
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            Select naming standard
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            Preview
+                        </ListBoxItem>
+                        <ListBoxItem>
+                            Commit
+                        </ListBoxItem>
+                    </ListBox>
+                </StackPanel>
+            </SplitView.Pane >
+            <SplitView.Content>
                 <!-- tela principal -->
-            </StackPanel>
-        </Grid>
-        
-        
-    </Panel>
+                <TextBlock>Content</TextBlock>
+            </SplitView.Content>
+        </SplitView>
 </Window>
